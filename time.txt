@@ -1,8 +1,16 @@
-with dlnproofc
+without dlnproof check
 ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 28.781s
-without dlnproofc
-ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 65.809s
+with dlnproofc
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 65.809s 16
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 54.111s 15key
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 59.511s 16
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 58.525s
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 70.533s 1 by 1
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 65.100s concurrent but sleep 1s
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 73.975s
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 63.796s
 
 
 default
+
 ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 80.706s
