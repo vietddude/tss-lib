@@ -19,7 +19,7 @@ type Proof struct {
 // var one = big.NewInt(1)
 
 // NewDLNProof generates a new DLN proof using the C implementation
-func NewDLNProof(h1, h2, x, p, q, N *big.Int, rand io.Reader) *Proof {
+func NewDLNProofWithoutPadding(h1, h2, x, p, q, N *big.Int, rand io.Reader) *Proof {
 	// Convert big.Int to byte slices for C wrapper
 	h1Bytes := h1.Bytes()
 	xBytes := x.Bytes()
@@ -108,6 +108,10 @@ func padBytes(b []byte, length int) []byte {
 	padded := make([]byte, length)
 	copy(padded[length-len(b):], b)
 	return padded
+}
+
+func NewDLNProof(h1, h2, x, p, q, N *big.Int, rand io.Reader) *Proof {
+	return NewDLNProofWithPadding(h1, h2, x, p, q, N, rand)
 }
 
 // NewDLNProofWithPadding generates a proof with consistent byte lengths

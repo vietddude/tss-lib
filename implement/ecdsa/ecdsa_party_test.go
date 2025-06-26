@@ -72,7 +72,7 @@ func TestECDSAPartyKeygen2Once(t *testing.T) {
 	cfg := defaultTestConfig()
 
 	fmt.Println("=== Starting 5 Key Generation Runs (2 at a time) ===")
-	totalRuns := 15
+	totalRuns := 16
 	batchSize := 2
 	var wg sync.WaitGroup
 	results := make([]struct {

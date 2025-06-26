@@ -9,7 +9,7 @@ ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 70.533s 1 by 1
 ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 65.100s concurrent but sleep 1s
 ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 73.975s
 ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 63.796s
-
+ok      github.com/bnb-chain/tss-lib/v2/implement/ecdsa 53.538s
 
 default
 
